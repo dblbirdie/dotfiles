@@ -1,0 +1,10 @@
+# Aliases
+
+# Prozess grep shortcut
+alias pg='ps aux | grep -i '
+
+# Find string in path
+alias finds='grep -rnw . -e $1'
+
+# ls options: A = include hidden (but not . or ..), F = put `/` after folders, h = byte unit suffixes
+alias ll='ls -AlFh'
