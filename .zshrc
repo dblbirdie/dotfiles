@@ -15,8 +15,8 @@ antigen bundle git
 antigen bundle rupa/z
 
 # Custom adjustments
-source custom-completion.zsh
-source .aliases
+source ~/.dotfiles/custom-completion.zsh
+source ~/.dotfiles/.aliases
 
 # Other stuff
 [[ -n "$SSH_CLIENT" ]] || export DEFAULT_USER="mhuber"
