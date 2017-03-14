@@ -13,6 +13,7 @@ antigen apply
 # Antigen Bundles
 antigen bundle git
 antigen bundle rupa/z
+antigen bundle sublime
 
 # Custom adjustments
 source ~/.dotfiles/custom-completion.zsh
