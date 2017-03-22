@@ -19,5 +19,8 @@ antigen bundle sublime
 source ~/.dotfiles/custom-completion.zsh
 source ~/.dotfiles/.aliases
 
+## Setup autocomplete for kubectl
+command -v kubectl >/dev/null && source <(kubectl completion zsh)
+
 # Other stuff
 [[ -n "$SSH_CLIENT" ]] || export DEFAULT_USER="mhuber"
