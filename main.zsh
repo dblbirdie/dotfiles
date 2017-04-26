@@ -19,8 +19,8 @@ antigen apply
 autoload zmv
 
 # Custom adjustments
+source $BASEDIR/aliases.zsh
 source $BASEDIR/custom-completion.zsh
-source $BASEDIR/.aliases
 
 # Setup autocomplete for kubectl
 command -v kubectl >/dev/null && source <(kubectl completion zsh)
