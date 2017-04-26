@@ -1,5 +1,6 @@
 # dotfiles
-A place to store my personal dotfiles.
+A place to store my personal zsh configuration.
 
-## Note
-This repo needs to be cloned in `~/.dotfiles` to make internal references work.
+## Notes
+- This repo can be cloned anywhere. Just reference it in your `~/.zshrc` (e.g., `source ~/.dotfiles/main.zsh`).
+- Some configurations are macOS specific
