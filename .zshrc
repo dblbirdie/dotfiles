@@ -13,6 +13,9 @@ antigen bundle sublime
 antigen theme agnoster
 antigen apply
 
+# Antigen Functions
+autoload zmv
+
 # Custom adjustments
 source ~/.dotfiles/custom-completion.zsh
 source ~/.dotfiles/.aliases
