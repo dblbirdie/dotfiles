@@ -1,5 +1,7 @@
 # zsh config
 #
+BASEDIR=$(dirname "$0")
+
 # Load Antigen and "Oh My ZSH!"
 source /usr/local/share/antigen/antigen.zsh
 antigen bundle robbyrussell/oh-my-zsh lib/
@@ -17,8 +19,8 @@ antigen apply
 autoload zmv
 
 # Custom adjustments
-source ~/.dotfiles/custom-completion.zsh
-source ~/.dotfiles/.aliases
+source $BASEDIR/custom-completion.zsh
+source $BASEDIR/.aliases
 
 # Setup autocomplete for kubectl
 command -v kubectl >/dev/null && source <(kubectl completion zsh)
