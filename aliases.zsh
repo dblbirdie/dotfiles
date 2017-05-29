@@ -1,4 +1,6 @@
+#
 # Aliases
+#
 
 # Prozess grep shortcut
 alias pg='ps aux | grep -i '
@@ -11,7 +13,7 @@ alias ll='ls -AlFh'
 
 # Make some commands verbose
 alias rm='rm -v'
-alias cp='cp -v'
+#alias cp='cp -v'
 
 # Misc
 alias whatismyip='echo "$(curl -fs https://api.ipify.org)"'
