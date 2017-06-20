@@ -15,5 +15,8 @@ alias ll='ls -AlFh'
 alias rm='rm -v'
 #alias cp='cp -v'
 
+# Show last Git commits as single lines
+alias lc='git log --oneline | head -10'
+
 # Misc
 alias whatismyip='echo "$(curl -fs https://api.ipify.org)"'
