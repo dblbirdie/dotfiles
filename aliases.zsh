@@ -24,3 +24,4 @@ alias brew-fullupgrade='brew doctor && brew update && brew upgrade'
 
 # Misc
 alias whatismyip='echo "$(curl -fs https://api.ipify.org)"'
+alias copystats='rsync -a --progress --stats --human-readable'
