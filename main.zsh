@@ -40,6 +40,7 @@ antigen apply
 autoload zmv
 
 # Custom adjustments
+source $BASEDIR/env.zsh
 source $BASEDIR/aliases.zsh
 source $BASEDIR/functions.zsh
 source $BASEDIR/custom-completion.zsh
