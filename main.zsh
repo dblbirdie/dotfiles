@@ -18,13 +18,13 @@ if [ ! -f $HOME/antigen/antigen.zsh ]; then
 fi
 source $HOME/antigen/antigen.zsh
 
-#antigen use oh-my-zsh	# init antigen with oh-my-zsh
-
 # Antigen Bundles
 antigen bundle robbyrussell/oh-my-zsh lib/
 antigen bundle git
 antigen bundle rupa/z
 antigen bundle sublime
+antigen bundle kubectl
+antigen bundle helm
 #antigen bundle aws
 #antigen bundle brew
 #antigen bundle osx
@@ -46,8 +46,8 @@ source $BASEDIR/functions.zsh
 source $BASEDIR/custom-completion.zsh
 
 # Setup autocomplete for kubectl
-command -v kubectl >/dev/null && source <(kubectl completion zsh)
-command -v helm >/dev/null && source <(helm completion zsh)
+#command -v kubectl >/dev/null && source <(kubectl completion zsh)
+#command -v helm >/dev/null && source <(helm completion zsh)
 
 # Other stuff
 [[ -n "$SSH_CLIENT" ]] || export DEFAULT_USER="mhuber"
