@@ -40,3 +40,18 @@ function HttpStatusCode()
     fi
     open $url;
 }
+
+# Print markdown files text optimized
+alias markout=MarkDownPrettyPrint
+
+function MarkDownPrettyPrint()
+{
+    md=$1
+
+    if [ $# -eq 0 ]
+    then
+        md="README.md"
+    fi
+
+    pandoc $md | lynx -stdin -dump
+}
