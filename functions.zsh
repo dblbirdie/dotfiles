@@ -55,3 +55,11 @@ function MarkDownPrettyPrint()
 
     pandoc $md | lynx -stdin -dump
 }
+
+# Create directory and change right into it
+alias md=MakeDirectory
+
+function MakeDirectory()
+{
+    mkdir -p $1 && cd $1
+}
