@@ -25,6 +25,7 @@ antigen bundle rupa/z
 antigen bundle sublime
 antigen bundle kubectl
 antigen bundle helm
+antigen bundle docker
 #antigen bundle aws
 #antigen bundle brew
 #antigen bundle osx
