@@ -44,11 +44,5 @@ autoload zmv
 source $BASEDIR/env.zsh
 source $BASEDIR/aliases.zsh
 source $BASEDIR/functions.zsh
+source $BASEDIR/prompt.zsh
 source $BASEDIR/custom-completion.zsh
-
-# Setup autocomplete for kubectl
-#command -v kubectl >/dev/null && source <(kubectl completion zsh)
-#command -v helm >/dev/null && source <(helm completion zsh)
-
-# Other stuff
-[[ -n "$SSH_CLIENT" ]] || export DEFAULT_USER="mhuber"
