@@ -19,7 +19,9 @@ fi
 source $HOME/antigen/antigen.zsh
 
 # Antigen Bundles
-antigen bundle robbyrussell/oh-my-zsh lib/
+antigen use oh-my-zsh
+
+antigen bundle zsh-users/zsh-completions
 antigen bundle git
 antigen bundle rupa/z
 antigen bundle sublime
@@ -32,6 +34,7 @@ antigen bundle docker
 #antigen bundle ssh-agent
 #antigen bundle urltools
 #antigen bundle vagrant
+#antigen bundle spectrum
 
 # Antigen Theme
 antigen theme agnoster
