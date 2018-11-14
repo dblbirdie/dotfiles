@@ -10,3 +10,6 @@ Icon
 
 # Thumbnails
 ._*
+
+# ZSH related files
+*.zwc
