@@ -5,13 +5,6 @@
 # Get current directory and use it as base directory
 BASEDIR=$(dirname "$0")
 
-# Update dotfiles if there are any changes in the remote repository
-(cd $BASEDIR;
-if [ `git rev-list --count origin/master..HEAD` -gt 0 ]; then
-  git pull
-fi
-)
-
 # Load Antigen
 if [ ! -f $HOME/antigen/antigen.zsh ]; then
   git clone git://github.com/zsh-users/antigen.git $HOME/antigen
