@@ -15,8 +15,8 @@ alias ll='ls -AlFh'
 alias lc='git log --oneline | head -10'
 
 # Homebrew
-alias brew-status='brew doctor && brew update && echo "---" && brew outdated'
-alias brew-fullupgrade='brew doctor && brew update && brew upgrade'
+alias brew-status='brew doctor && brew update && echo "Outdated brew/core:" && brew outdated && echo "Outdated brew/cask:" && brew cask outdated'
+alias brew-fullupgrade='brew doctor && brew update && brew upgrade && brew cask upgrade'
 alias brew-cleanup='brew cleanup -s; rm -rf "$(brew --cache)"'
 
 # Misc
