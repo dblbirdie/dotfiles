@@ -30,7 +30,11 @@ antigen bundle docker
 #antigen bundle spectrum
 
 # Antigen Theme
-antigen theme agnoster
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status context dir dir_writable vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time todo)
+POWERLEVEL9K_STATUS_OK=false
+antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
 
 # Antigen Functions
@@ -40,5 +44,4 @@ autoload zmv
 source $BASEDIR/env.zsh
 source $BASEDIR/aliases.zsh
 source $BASEDIR/functions.zsh
-source $BASEDIR/prompt.zsh
 source $BASEDIR/custom-completion.zsh
