@@ -25,3 +25,4 @@ alias copystats='rsync -a --progress --stats --human-readable'
 alias httpstatuscode='curl -s http://www.ietf.org/assignments/http-status-codes/http-status-codes.txt | grep ' $1 ' | head -1'
 alias beautifyjson='python -m json.tool'
 alias trim="sed '/^[[:space:]]*$/d;s/^[[:space:]]*//;s/[[:space:]]*$//'"
+alias cpcmd='fc -ln -1 | awk '\''{$1=$1}1'\'' ORS='\'''\'' | pbcopy'
