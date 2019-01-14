@@ -1,6 +1,25 @@
 # dotfiles
-A place to store my personal zsh configuration.
 
-## Notes
-- This repo can be cloned anywhere. Just reference it in your `~/.zshrc` (e.g., `source ~/.dotfiles/main.zsh`).
-- Some configurations are macOS specific
+A place to store my personal ZSH configuration. Most configurations are macOS specific and user customized. This configuration is not intended to be used out-of-the-box.
+
+## Setup
+
+This repo can be cloned anywhere. Just set `$ZDOTDIR` in your `~/.zshenv` accordingly:
+
+```
+# Set location of ZSH dotfiles
+ZDOTDIR=$HOME/.dotfiles
+source $ZDOTDIR/.zshenv
+```
+
+## Prerequisites
+
+To clone my setup, you will have to install the following tools:
+
+```
+$ brew install git
+$ brew install zsh
+$ brew install antigen
+$ brew cask install iterm2
+$ brew tap homebrew/cask-fonts && brew cask install font-meslo-nerd-font
+```

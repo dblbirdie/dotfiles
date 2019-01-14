@@ -1,15 +1,11 @@
 #
-# This is the main dotfile. Source this file in your ~/.zshrc
+# Interactive Shell Configuration.
 #
 
-# Get current directory and use it as base directory
-BASEDIR=$(dirname "$0")
+DEFAULT_USER=$(whoami)
 
 # Load Antigen
-if [ ! -f $HOME/antigen/antigen.zsh ]; then
-  git clone git://github.com/zsh-users/antigen.git $HOME/antigen
-fi
-source $HOME/antigen/antigen.zsh
+source /usr/local/share/antigen/antigen.zsh
 
 # Antigen Bundles
 antigen use oh-my-zsh
@@ -41,7 +37,6 @@ antigen apply
 autoload zmv
 
 # Custom adjustments
-source $BASEDIR/env.zsh
-source $BASEDIR/aliases.zsh
-source $BASEDIR/functions.zsh
-source $BASEDIR/custom-completion.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/functions.zsh
+source $ZDOTDIR/custom-completion.zsh
