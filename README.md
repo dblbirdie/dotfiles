@@ -23,3 +23,7 @@ $ brew install antigen
 $ brew cask install iterm2
 $ brew tap homebrew/cask-fonts && brew cask install font-meslo-nerd-font
 ```
+
+## Local configuration
+
+Put all configuration with a local scope in the file `local.zsh` and make sure that it is not pushed into a public repository.

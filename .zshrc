@@ -38,6 +38,7 @@ antigen apply
 autoload zmv
 
 # Custom adjustments
-source $ZDOTDIR/aliases.zsh
-source $ZDOTDIR/functions.zsh
-source $ZDOTDIR/custom-completion.zsh
+for file in $ZDOTDIR/{aliases,functions,custom-completion,local}.zsh; do
+    [ -r "$file" ] && source "$file"
+done
+unset file
