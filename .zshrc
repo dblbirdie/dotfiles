@@ -17,7 +17,8 @@ antigen bundle sublime
 antigen bundle kubectl
 antigen bundle helm
 antigen bundle docker
-#antigen bundle aws
+antigen bundle aws
+antigen bundle terraform
 #antigen bundle brew
 #antigen bundle osx
 #antigen bundle ssh-agent
