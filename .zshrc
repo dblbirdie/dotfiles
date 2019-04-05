@@ -28,8 +28,18 @@ antigen bundle terraform
 
 # Antigen Theme
 POWERLEVEL9K_MODE='nerdfont-complete'
+CF_ICON="$'\ue33d'"   #Alternatives: $'\uf660' $'\ufa8f' $'\uf65e' $'\uf662'
+POWERLEVEL9K_CUSTOM_CF="echo \$(jq -je '[.OrganizationFields.Name,.SpaceFields.Name] | join(\"/\")' ~/.cf/config.json) $CF_ICON\ "
+POWERLEVEL9K_CUSTOM_CF_BACKGROUND="yellow"
+POWERLEVEL9K_CUSTOM_CF_FOREGROUND="black"
+
+DOCKER_ICON="$'\uf308'"   #Alternative: $'\ue7b0'
+POWERLEVEL9K_CUSTOM_DOCKER="echo \$(docker info --format '{{json .}}' | jq -cerM '.ContainersRunning, .ContainersPaused, .ContainersStopped' | tr '\n' ' ') $DOCKER_ICON\ "
+POWERLEVEL9K_CUSTOM_DOCKER_BACKGROUND="black"
+POWERLEVEL9K_CUSTOM_DOCKER_FOREGROUND="yellow"
+
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status context dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time time todo)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time context custom_cf docker_machine kubecontext aws detect_virt custom_docker)
 POWERLEVEL9K_STATUS_OK=false
 antigen theme bhilburn/powerlevel9k powerlevel9k
 antigen apply
