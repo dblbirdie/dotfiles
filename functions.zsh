@@ -63,3 +63,9 @@ function MakeDirectory()
 {
     mkdir -p $1 && cd $1
 }
+
+# Copy command line and stdout to the clipboard
+
+function cpcmd {
+    echo "$ $@\n$(zsh -ic $@)" | tee >(pbcopy)
+ }
