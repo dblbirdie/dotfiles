@@ -13,6 +13,7 @@ Icon
 
 # ZSH related files
 *.zwc
+.zsh_history
 
 # Local configuration
 local.zsh
