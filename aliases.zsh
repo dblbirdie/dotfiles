@@ -19,6 +19,9 @@ alias brew-status='brew doctor && brew update && echo "Outdated brew/core:" && b
 alias brew-fullupgrade='brew doctor && brew update && brew upgrade && brew cask upgrade'
 alias brew-cleanup='brew cleanup -s && rm -rf "$(brew --cache)"'
 
+# ZSH/Antigen
+alias antigen-fullcleanup='antigen cleanup; antigen reset;'
+
 # Misc
 alias whatismyip='echo "$(curl -fs https://api.ipify.org)"'
 alias copystats='rsync -a --progress --stats --human-readable'
