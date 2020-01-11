@@ -11,6 +11,10 @@ source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=66"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_USE_ASYNC=true
 antigen bundle git
 antigen bundle rupa/z
 antigen bundle sublime
