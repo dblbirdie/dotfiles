@@ -26,7 +26,7 @@ alias statuscode=HttpStatusCode
 function HttpStatusCode()
 {
     base_url=https://httpstatuses.com/
-    error_code=$1
+    error_code="$1"
     url="$base_url$1"
 
     if [[ "$error_code" != <-> || "${#error_code}" -ne 3 ]]
@@ -46,7 +46,7 @@ alias markout=MarkDownPrettyPrint
 
 function MarkDownPrettyPrint()
 {
-    md=$1
+    md="$1"
 
     if [ $# -eq 0 ]
     then
@@ -61,11 +61,10 @@ alias md=MakeDirectory
 
 function MakeDirectory()
 {
-    mkdir -p $1 && cd $1
+    mkdir -p "$1" && cd "$1"
 }
 
 # Copy command line and stdout to the clipboard
-
 function cpcmd {
     echo "$ $@\n$(zsh -ic $@)" | tee >(pbcopy)
  }
