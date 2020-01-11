@@ -38,7 +38,7 @@ POWERLEVEL9K_CUSTOM_CF_BACKGROUND="yellow"
 POWERLEVEL9K_CUSTOM_CF_FOREGROUND="black"
 
 DOCKER_ICON="$'\uf308'"   #Alternative: $'\ue7b0'
-POWERLEVEL9K_CUSTOM_DOCKER="echo \$(docker info --format '{{json .}}' | jq -cerM '.ContainersRunning, .ContainersPaused, .ContainersStopped' | tr '\n' ' ') $DOCKER_ICON\ "
+POWERLEVEL9K_CUSTOM_DOCKER="echo \$(docker info --format '{{json .}}' | jq -cerM '.ContainersRunning') $DOCKER_ICON\ "
 POWERLEVEL9K_CUSTOM_DOCKER_BACKGROUND="black"
 POWERLEVEL9K_CUSTOM_DOCKER_FOREGROUND="yellow"
 
