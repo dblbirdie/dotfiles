@@ -45,7 +45,7 @@ POWERLEVEL9K_CUSTOM_DOCKER_FOREGROUND="yellow"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status context dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time context custom_cf docker_machine kubecontext aws detect_virt custom_docker)
 POWERLEVEL9K_STATUS_OK=false
-antigen theme bhilburn/powerlevel9k powerlevel9k
+antigen theme romkatv/powerlevel10k
 antigen apply
 
 # Antigen Functions
