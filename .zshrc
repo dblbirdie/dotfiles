@@ -33,12 +33,12 @@ antigen bundle terraform
 # Antigen Theme
 POWERLEVEL9K_MODE='nerdfont-complete'
 CF_ICON="$'\ue33d'"   #Alternatives: $'\uf660' $'\ufa8f' $'\uf65e' $'\uf662'
-POWERLEVEL9K_CUSTOM_CF="echo \$(jq -je '[.OrganizationFields.Name,.SpaceFields.Name] | join(\"/\")' ~/.cf/config.json) $CF_ICON\ "
+POWERLEVEL9K_CUSTOM_CF="echo \$(test -f ~/.cf/config.json && jq -je '[.OrganizationFields.Name,.SpaceFields.Name] | join(\"/\")' ~/.cf/config.json) $CF_ICON\ "
 POWERLEVEL9K_CUSTOM_CF_BACKGROUND="yellow"
 POWERLEVEL9K_CUSTOM_CF_FOREGROUND="black"
 
 DOCKER_ICON="$'\uf308'"   #Alternative: $'\ue7b0'
-POWERLEVEL9K_CUSTOM_DOCKER="echo \$(docker info --format '{{json .}}' | jq -cerM '.ContainersRunning') $DOCKER_ICON\ "
+POWERLEVEL9K_CUSTOM_DOCKER="echo \$(command -v docker >/dev/null 2>&1 && docker info --format '{{json .}}' | jq -cerM '.ContainersRunning') $DOCKER_ICON\ "
 POWERLEVEL9K_CUSTOM_DOCKER_BACKGROUND="black"
 POWERLEVEL9K_CUSTOM_DOCKER_FOREGROUND="yellow"
 
