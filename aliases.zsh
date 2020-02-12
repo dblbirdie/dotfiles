@@ -3,10 +3,10 @@
 #
 
 # Prozess grep shortcut
-alias pg='ps aux | grep -i '
+alias pg='ps aux | grep -i'
 
 # Find string in path
-alias finds='grep -rnw . -e $1'
+alias finds='grep -rnw . -e'
 
 # ls options: A = include hidden (but not . or ..), F = put `/` after folders, h = byte unit suffixes
 alias ll='ls -AlFh'
@@ -25,7 +25,6 @@ alias antigen-fullcleanup='antigen cleanup; antigen reset;'
 # Misc
 alias whatismyip='echo "$(curl -fs https://api.ipify.org)"'
 alias copystats='rsync -a --progress --stats --human-readable'
-alias httpstatuscode='curl -s http://www.ietf.org/assignments/http-status-codes/http-status-codes.txt | grep ' $1 ' | head -1'
 alias beautifyjson='python -m json.tool'
 alias trim="sed '/^[[:space:]]*$/d;s/^[[:space:]]*//;s/[[:space:]]*$//'"
 alias genpass32='openssl rand -base64 32'
