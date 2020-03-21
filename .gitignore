@@ -4,19 +4,16 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+._*
 
 # Configuration files
 .vscode/
 
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
 # ZSH related files
 *.zwc
 .zsh_history
+.zcompdump
 
 # Local configuration
 local.zsh
+local/
