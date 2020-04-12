@@ -9,3 +9,4 @@ export EDITOR="vi"
 export PAGER="less"
 export GOROOT="$(go env GOROOT)"
 export GOPATH="$HOME/go"
+export HOMEBREW_NO_ANALYTICS=1
