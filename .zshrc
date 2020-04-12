@@ -52,6 +52,10 @@ POWERLEVEL9K_STATUS_OK=false
 antigen theme romkatv/powerlevel10k
 antigen apply
 
+# Options
+unsetopt beep
+unsetopt auto_cd
+
 # Antigen Functions
 autoload zmv
 
