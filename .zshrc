@@ -32,6 +32,10 @@ antigen bundle terraform
 
 # Antigen Theme
 POWERLEVEL9K_MODE='nerdfont-complete'
+
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_first_and_last
+
 CF_ICON="$'\ue33d'"   #Alternatives: $'\uf660' $'\ufa8f' $'\uf65e' $'\uf662'
 POWERLEVEL9K_CUSTOM_CF="echo \$(test -f ~/.cf/config.json && jq -je '[.OrganizationFields.Name,.SpaceFields.Name] | join(\"/\")' ~/.cf/config.json) $CF_ICON\ "
 POWERLEVEL9K_CUSTOM_CF_BACKGROUND="yellow"
