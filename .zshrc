@@ -60,6 +60,7 @@ antigen apply
 # Options
 unsetopt beep
 unsetopt auto_cd
+setopt HIST_IGNORE_SPACE
 
 # Antigen Functions
 autoload zmv
