@@ -11,13 +11,12 @@ alias finds='grep -rnw . -e'
 # ls options: A = include hidden (but not . or ..), F = put `/` after folders, h = byte unit suffixes
 alias ll='ls -AlFh'
 
-# Show last Git commits as single lines
-alias lc='git log --oneline | head -10'
-
-# Homebrew
-alias brew-status='brew doctor && brew update && echo "Outdated brew/core:" && brew outdated && echo "Outdated brew/cask:" && brew cask outdated'
-alias brew-fullupgrade='brew doctor && brew update && brew upgrade && brew cask upgrade'
-alias brew-cleanup='brew cleanup -s && rm -rfv "$(brew --cache)"'
+# Git
+alias lc='git --no-pager log --decorate --pretty=oneline --abbrev-commit -10'
+git config --global alias.root "rev-parse --show-toplevel"
+alias cdg='cd "$(git root)"'
+alias gb='git branch -v | grep -iv "\[gone\]"'
+alias gdiff='git diff --no-index'
 
 # ZSH/Antigen
 alias antigen-fullcleanup='antigen cleanup; antigen reset;'
@@ -29,3 +28,6 @@ alias beautifyjson='python -m json.tool'
 alias trim="sed '/^[[:space:]]*$/d;s/^[[:space:]]*//;s/[[:space:]]*$//'"
 alias genpass32='openssl rand -base64 32'
 alias fitscreen='expand | cut -c-$COLUMNS'
+
+# VIM
+alias vi="vi -u \"$ZDOTDIR/.exrc\""
