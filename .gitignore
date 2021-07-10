@@ -11,8 +11,9 @@
 
 # ZSH related files
 *.zwc
-.zsh_history
 .zcompdump
+.zsh_history
+.zsh_sessions
 
 # Local configuration
 local.zsh
