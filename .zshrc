@@ -19,16 +19,15 @@ antigen bundle git
 antigen bundle rupa/z
 antigen bundle sublime
 antigen bundle kubectl
+antigen bundle kubernetes
 antigen bundle helm
 antigen bundle docker
-antigen bundle aws
 antigen bundle terraform
-#antigen bundle brew
-#antigen bundle osx
-#antigen bundle ssh-agent
-#antigen bundle urltools
-#antigen bundle vagrant
-#antigen bundle spectrum
+antigen bundle brew
+antigen bundle colorize
+antigen bundle command-not-found
+antigen bundle npm
+antigen bundle yarn
 
 # Antigen Theme
 POWERLEVEL9K_MODE='nerdfont-complete'
