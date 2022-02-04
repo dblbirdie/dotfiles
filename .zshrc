@@ -18,7 +18,6 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 antigen bundle git
 antigen bundle rupa/z
 antigen bundle sublime
-antigen bundle kubectl
 antigen bundle kubernetes
 antigen bundle helm
 antigen bundle docker

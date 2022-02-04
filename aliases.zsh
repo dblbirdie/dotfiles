@@ -31,3 +31,8 @@ alias fitscreen='expand | cut -c-$COLUMNS'
 
 # VIM
 alias vi="vi -u \"$ZDOTDIR/.exrc\""
+
+# Aliases for kubectl from https://github.com/ahmetb/kubectl-aliases
+KUBE_ALIASES="$ZDOTDIR/.kubectl_aliases"
+[ ! -f "$KUBE_ALIASES" ] && curl -s https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases curl -o "$KUBE_ALIASES"
+source "$KUBE_ALIASES"
