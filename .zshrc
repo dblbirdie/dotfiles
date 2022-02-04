@@ -52,7 +52,7 @@ setopt HIST_IGNORE_SPACE
 autoload zmv
 
 # Custom adjustments
-for file in $ZDOTDIR/{aliases,functions,fzf,custom-completion,local}.zsh; do
+for file in $ZDOTDIR/{aliases,functions,fzf,autocomplete,local,$ZLOCALCFG}.zsh; do
     [ -r "$file" ] && source "$file"
 done
 unset file
