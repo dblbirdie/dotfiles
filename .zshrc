@@ -28,8 +28,8 @@ antigen bundle yarn
 # Antigen Theme
 POWERLEVEL9K_MODE='nerdfont-complete'
 
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
-POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_first_and_last
+POWERLEVEL9K_SHORTEN_STRATEGY=truncate_with_folder_marker
+POWERLEVEL9K_SHORTEN_FOLDER_MARKER=.git
 
 source "$ZDOTDIR/prompt.zsh"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status context dir dir_writable vcs)
