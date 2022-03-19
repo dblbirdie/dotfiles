@@ -5,3 +5,6 @@ set backspace=indent,eol,start
 :syntax on
 set colorcolumn=50,72,80,120
 highlight ColorColumn ctermbg=0 guibg=lightgrey
+set tabstop=2
+set expandtab
+set shiftwidth=2
