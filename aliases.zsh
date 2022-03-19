@@ -36,3 +36,6 @@ alias vi="vi -u \"$ZDOTDIR/.exrc\""
 KUBE_ALIASES="$ZDOTDIR/.kubectl_aliases"
 [ ! -f "$KUBE_ALIASES" ] && curl -s https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases curl -o "$KUBE_ALIASES"
 source "$KUBE_ALIASES"
+
+# The trailing space causes the next word to be checked for alias substitution.
+alias watch='watch '
