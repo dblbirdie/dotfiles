@@ -17,6 +17,7 @@ git config --global alias.root "rev-parse --show-toplevel"
 alias cdg='cd "$(git root)"'
 alias gb='git branch -v | grep -iv "\[gone\]"'
 alias gdiff='git diff --no-index'
+alias ghist="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 
 # ZSH/Antigen
 alias antigen-fullcleanup='antigen cleanup; antigen reset;'
